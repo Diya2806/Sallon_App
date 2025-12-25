@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Sallon App</string>
+    <string name="menu_open">open</string>
+    <string name="menu_close">close</string>
+
+    <string-array name="status_options">
+        <item>Active</item>
+        <item>Inactive</item>
+    </string-array>
+
+    <string-array name="ServiceType">
+        <item>Hair</item>
+        <item>body</item>
+        <item>face</item>
+    </string-array>
+
+    <string-array name="ServiceSubType">
+        <item>Hair color</item>
+        <item>body spa</item>
+        <item>facial</item>
+    </string-array>
+    <string-array name="State">
+        <item>Gujarat</item>
+        <item>Rajasthan</item>
+        <item>katakana</item>
+    </string-array>
+
+    <string-array name="Shop">
+        <item>Beauty</item>
+        <item>Your Choice</item>
+        <item>Style With us</item>
+    </string-array>
+</resources>

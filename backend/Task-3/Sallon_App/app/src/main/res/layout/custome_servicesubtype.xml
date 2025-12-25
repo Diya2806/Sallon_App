@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_glass"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+
+        android:padding="12dp"
+        android:elevation="4dp">
+
+        <!-- Main Service Type -->
+        <TextView
+            android:id="@+id/MainService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Service: Haircut"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <!-- Sub Service Name -->
+        <TextView
+            android:id="@+id/SubServiceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Service: Trim"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/SubServiceStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: Active"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+    <!-- Buttons Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="end">
+
+        <!-- Edit Button -->
+        <Button
+            android:id="@+id/btnservicesubEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Edit"
+          android:background="@drawable/approvebtn"
+            android:drawableStart="@drawable/edit"
+            android:textColor="@android:color/white"/>
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/btnservicesubDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:padding="16dp"
+            android:drawableStart="@drawable/delete"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rejectbtn"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>

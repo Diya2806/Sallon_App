@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/bg_gradient"
+    tools:context=".Customer_Reg">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/logo"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_glass"
+    android:padding="24dp"
+    android:elevation="6dp"
+    android:layout_margin="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Register"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/CustomerRegName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Name"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:drawableStart="@drawable/person"
+                android:background="@drawable/input"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"/>
+            <EditText
+                android:id="@+id/CustomerRegNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Mobile Number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:drawableStart="@drawable/call"
+                android:background="@drawable/input"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="12dp"
+                android:maxLength="10"
+                android:inputType="phone"
+                android:padding="12dp"/>
+            <EditText
+                android:id="@+id/CustomerRegEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:drawableStart="@drawable/email"
+                android:background="@drawable/input"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"/>
+            <EditText
+                android:id="@+id/CustomerRegAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:layout_marginTop="12dp"
+                android:gravity="top|start"
+                android:drawableStart="@drawable/area"
+                android:drawablePadding="8dp"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/input"
+               />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/CustomerRegPass"
+                android:hint="Password"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:drawableStart="@drawable/lock"
+                android:background="@drawable/input"
+                android:drawablePadding="10dp"
+
+                android:inputType="textPassword"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCustomerReg"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Register"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Login"
+                android:paddingTop="8dp"
+                android:paddingRight="20dp"
+                android:id="@+id/CustomerLogin"
+                android:textColor="@color/blue"
+                android:layout_gravity="end"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+</LinearLayout>

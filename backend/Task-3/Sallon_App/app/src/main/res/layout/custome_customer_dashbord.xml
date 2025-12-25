@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="12dp"
+    android:elevation="6dp"
+    app:cardCornerRadius="12dp"
+
+    >
+
+    <LinearLayout
+
+     android:background="@drawable/bg_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/shopImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sallon"
+
+             />
+
+        <TextView
+            android:id="@+id/CustomershopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="salon Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:textColor="#000" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner Name"
+            android:id="@+id/CustomerOwnerName"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/black"/>
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/Customershoprating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:progressTintMode="src_in"
+            android:secondaryProgressTint="@color/gold"
+            android:secondaryProgressTintMode="src_in"
+            android:backgroundTint="@color/gray"
+            android:backgroundTintMode="src_in"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            style="?android:attr/ratingBarStyleSmall"
+            android:rating="0"
+            android:scaleX="0.8"
+            android:scaleY="0.8"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textColor="@color/black"
+            android:id="@+id/CustomerShopDetails"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

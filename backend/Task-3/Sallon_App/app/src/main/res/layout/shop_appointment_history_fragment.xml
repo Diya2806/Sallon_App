@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/shopHistoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/approvetxt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Approve"
+            android:textSize="14sp"
+
+            android:padding="6dp"
+            android:background="@drawable/bg_history"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/rejecttxt"
+            android:layout_width="0dp"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:background="@drawable/bg_history"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            android:padding="6dp"
+
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/pendingtxt"
+            android:layout_width="0dp"
+
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:singleLine="true"
+            android:padding="6dp"
+            android:background="@drawable/bg_history"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/compeletetxt"
+            android:layout_width="0dp"
+
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:textSize="14sp"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:background="@drawable/bg_history"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/shopappointmenthistory"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_glass"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

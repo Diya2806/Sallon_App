@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Service Type Spinner -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Service Type"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/black"/>
+
+    <Spinner
+        android:id="@+id/spinnerRegServiceType"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColor="#000000"
+        android:background="@drawable/bg_card"
+        android:theme="@style/SpinnerTheme"
+        android:padding="8dp"/>
+
+    <!-- Service Sub Type -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Sub Type"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/black"/>
+
+    <Spinner
+        android:id="@+id/spinnerRegServiceSubType"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:entries="@array/ServiceSubType"
+        android:hint="Enter Sub Type"
+        android:background="@drawable/bg_card"
+        android:padding="10dp"
+        android:layout_marginBottom="4dp"
+        android:theme="@style/SpinnerTheme"
+        android:inputType="text"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Price"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/addprice"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Add Price"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:inputType="number"
+        android:padding="10dp"
+        android:background="@drawable/input"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Title"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/addTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter Service Title"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:background="@drawable/input"/>
+
+    <!-- Service Image Upload -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp">
+
+        <ImageView
+            android:id="@+id/RegimgService"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/add"
+            android:background="@drawable/bg_card"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="12dp"/>
+
+
+    </LinearLayout>
+
+    <!-- Add Service Button -->
+    <Button
+        android:id="@+id/btnRegAddService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Service"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button"
+        android:textColor="@android:color/white"/>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Service List -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Services"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="6dp"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/bg_glass">
+       <ListView
+           android:id="@+id/listViewRegServices"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:padding="10dp"/>
+   </LinearLayout>
+
+</LinearLayout>

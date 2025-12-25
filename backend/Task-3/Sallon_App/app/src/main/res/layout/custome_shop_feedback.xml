@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_card"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="8dp">
+
+    <!-- Customer Image -->
+    <ImageView
+        android:id="@+id/feedimgCustomer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/person"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_circle"
+        android:padding="3dp"/>
+
+    <!-- Content Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/feedCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- Feedback -->
+        <TextView
+            android:id="@+id/FeedbackMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Great service!"
+            android:textColor="@color/black"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"/>
+
+        <!-- Rating -->
+        <RatingBar
+            android:id="@+id/feedratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+
+            android:isIndicator="true"
+            style="?android:attr/ratingBarStyleSmall"/>
+
+        <!-- Reply Button BELOW rating -->
+        <Button
+            android:id="@+id/btnfeedReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reply"
+            android:background="@drawable/button"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="6dp"/>
+    </LinearLayout>
+</LinearLayout>

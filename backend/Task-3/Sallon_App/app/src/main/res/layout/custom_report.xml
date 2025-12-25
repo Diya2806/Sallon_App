@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemReportLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/bg_card"
+    android:layout_marginBottom="8dp">
+
+    <!-- Shop Image -->
+    <ImageView
+        android:id="@+id/reportShopImg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/person"
+        android:background="@drawable/bg_circle"
+        android:contentDescription="Shop Image" />
+
+    <!-- Text Details -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/reportShopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/reportOwnerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner Name"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/reportTotalCustomers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Customers: 0"
+            android:layout_marginTop="4dp"
+            android:textColor="#444444"/>
+
+        <TextView
+            android:id="@+id/tvTotalServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Services: 0"
+            android:layout_marginTop="2dp"
+            android:textColor="#444444"/>
+
+        <TextView
+            android:id="@+id/reportTotalRevenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Revenue: ₹0"
+            android:layout_marginTop="2dp"
+            android:textColor="#444444"/>
+
+        <TextView
+            android:id="@+id/reportmonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Month/Year"
+            android:layout_marginTop="2dp"
+            android:textColor="#444444"/>
+    </LinearLayout>
+
+</LinearLayout>

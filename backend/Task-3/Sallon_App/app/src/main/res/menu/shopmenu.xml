@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single"
+    android:id="@+id/sgrp1">
+    <item android:id="@+id/shopHome"
+        android:title="Dash Bord"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/shopmenuServices"
+        android:title="Services"
+        android:icon="@drawable/servicesub"/>
+    <item android:id="@+id/shopmenuCustomer"
+        android:title="Customers"
+        android:icon="@drawable/customers"/>
+</group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/sgrp2">
+        <item android:id="@+id/shopmenuappointment"
+            android:title="Appointment"
+            android:icon="@drawable/inbox"
+            />
+        <item android:id="@+id/todaybooking"
+            android:title="Today Booking"
+            android:icon="@drawable/book"/>
+        <item android:id="@+id/appointmenthistory"
+            android:title="History"
+            android:icon="@drawable/history"/>
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/sgrp3">
+
+        <item android:id="@+id/shopmenuprofile"
+            android:icon="@drawable/person"
+            android:title="Profile"/>
+        <item android:id="@+id/shopmenufeedback"
+            android:title="FeedBack"
+            android:icon="@drawable/feedback"
+            />
+        <item android:id="@+id/shopmenulogout"
+            android:title="LogOut"
+            android:icon="@drawable/logout"
+            />
+
+
+    </group>
+
+</menu>

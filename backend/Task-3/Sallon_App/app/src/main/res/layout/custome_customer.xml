@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="center_vertical">
+
+        <!-- Owner Image -->
+        <ImageView
+            android:id="@+id/ivCustomerImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/person"
+            android:layout_marginRight="3dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_circle"
+            android:contentDescription="Owner Image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+      >
+
+        <!-- Shop Owner Name -->
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+
+        <!-- Phone Number -->
+        <TextView
+            android:id="@+id/tvcustomerPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: 9876543210"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+        <!-- Phone Number -->
+        <TextView
+            android:id="@+id/tvcustomerEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email Id : example@gmail.com"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <!-- Address -->
+        <TextView
+            android:id="@+id/tvcustomerAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: 123 Street, City"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

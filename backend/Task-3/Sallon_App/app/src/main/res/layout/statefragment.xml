@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_gradient"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State Management"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:paddingBottom="12dp"/>
+
+        <!-- State Name -->
+        <EditText
+            android:id="@+id/editStateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State Name"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="12dp"
+            android:background="@drawable/input"/>
+
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save State"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginVertical="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- ListView to show added states -->
+            <ListView
+                android:id="@+id/listViewState"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_glass"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
