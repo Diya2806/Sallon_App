@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/titleCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Details"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:paddingBottom="12dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/searchCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawablePadding="10dp"
+                android:inputType="textShortMessage"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:hint="Search Customer"
+                android:drawableStart="@drawable/search"
+                android:background="@drawable/input"
+                android:padding="8dp"/>
+
+
+            <ListView
+                android:id="@+id/listViewCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_glass"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

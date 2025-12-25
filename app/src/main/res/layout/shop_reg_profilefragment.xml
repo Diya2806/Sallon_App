@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/imgShopOwner"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/person"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_circle"
+            android:padding="4dp"
+            android:layout_marginTop="20dp" />
+
+        <!-- Shop Name -->
+        <TextView
+            android:id="@+id/tvprofileShopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop Name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="12dp" />
+
+        <!-- Shop Bio -->
+        <EditText
+            android:id="@+id/tvShopBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bio  Links"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:enabled="false"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:maxLines="5"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF"
+            android:alpha="0.3"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Shop Details Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/bg_glass"
+            android:elevation="6dp">
+
+           <TextView
+               android:id="@+id/shopprofilename"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:drawableStart="@drawable/person"
+               android:drawablePadding="10dp"
+               android:text="Owner Name"
+               android:textColor="@color/black"
+               android:background="@drawable/bg_card"
+               android:padding="10dp"
+               android:textStyle="bold"
+               android:layout_marginBottom="10dp"
+               android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/shopprofilenumber"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/call"
+                android:drawablePadding="10dp"
+                android:text="9873214560"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_card"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/shopprofileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="10dp"
+                android:text="example@gmail.com"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_card"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/shopprofileAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/area"
+                android:drawablePadding="10dp"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_card"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        <!-- Buttons Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+            <!-- Edit Profile Button -->
+            <Button
+                android:id="@+id/btnEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Edit Profile"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/approvebtn"
+                android:layout_marginEnd="10dp"
+                android:drawableLeft="@drawable/edit"
+                 />
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Logout"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rejectbtn"
+                android:drawableLeft="@drawable/logout" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

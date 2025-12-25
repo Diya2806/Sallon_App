@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/bg_card"
+    android:layout_marginBottom="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/apimgCustomer"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/person"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_circle"
+            android:layout_gravity="center_vertical" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/apCustomerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diya Patel"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/apServiceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service: Haircut"
+                android:textSize="14sp"
+                android:textColor="#555555" />
+
+            <TextView
+                android:id="@+id/apcustomernumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number"
+                android:textSize="14sp"
+                android:textColor="#555555" />
+
+            <TextView
+                android:id="@+id/apTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time: 11:30 AM"
+                android:textSize="13sp"
+                android:textColor="#777777" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/apStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            android:padding="6dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnapAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/approvebtn"
+            android:paddingHorizontal="16dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnapReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rejectbtn"
+            android:paddingHorizontal="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>

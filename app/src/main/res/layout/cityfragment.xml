@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_gradient"
+        android:padding="16dp"
+        android:layout_height="match_parent">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City Management"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:paddingBottom="12dp"/>
+
+        <!-- State Spinner -->
+        <Spinner
+            android:id="@+id/spinnerState"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:theme="@style/SpinnerTheme"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/input"
+            android:entries="@array/State"/>
+
+        <!-- City Name -->
+        <EditText
+            android:id="@+id/editCityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City Name"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="12dp"
+            android:background="@drawable/input"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save City"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button"
+            android:textColor="@android:color/white"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginVertical="12dp"/>
+
+        <!-- ListView to show cities -->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <ListView
+               android:id="@+id/listViewCity"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/bg_glass"
+               android:padding="8dp"/>
+       </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

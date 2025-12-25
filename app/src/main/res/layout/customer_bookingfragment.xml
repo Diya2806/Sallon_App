@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <!-- 🔹 Title -->
+        <TextView
+            android:id="@+id/CustomerAppointmentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Appointment"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"/>
+
+        <!-- 🔹 Card Background -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_glass"
+            android:padding="18dp"
+            android:orientation="vertical"
+            android:elevation="5dp"
+            android:clipToPadding="false"
+            android:clipToOutline="true">
+
+
+
+            <!-- 🔹 Shop Search Spinner -->
+           <AutoCompleteTextView
+               android:id="@+id/shopSearch"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Search Shop"
+               android:completionThreshold="1"
+               android:inputType="text"
+               android:padding="12dp"
+               android:textColor="@color/black"
+               android:textColorHint="@color/black"
+               android:drawableEnd="@drawable/search"
+               android:background="@drawable/input"/>
+
+            <!-- 🔹 Service Type -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Service"
+                android:textStyle="bold"
+                android:paddingTop="12dp"/>
+            <Spinner
+                android:id="@+id/spinnerService"
+                android:layout_width="match_parent"
+                android:theme="@style/SpinnerTheme"
+                android:layout_height="50dp"
+
+                android:background="@drawable/input"
+                android:padding="8dp"/>
+
+            <!-- 🔹 Sub Service -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Sub-Service"
+                android:textStyle="bold"
+                android:paddingTop="12dp"/>
+            <Spinner
+                android:id="@+id/spinnerSubService"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:theme="@style/SpinnerTheme"
+
+                android:background="@drawable/input"
+                android:padding="8dp"/>
+            <!-- 🔹 Price Display -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:background="@drawable/input"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+
+            <!-- 🔹 Price Display -->
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: ₹0"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/holo_green_dark"/>
+
+            <ImageView
+                android:id="@+id/serviceImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input"
+                android:contentDescription="Service Image"
+                android:visibility="gone" />
+
+            <!-- 🔹 Date Picker -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date"
+                android:textStyle="bold"
+                android:paddingTop="12dp"/>
+            <EditText
+                android:id="@+id/customerDate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Pick a date"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableStart="@drawable/calender"
+                android:drawablePadding="10dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:background="@drawable/input"
+                android:padding="10dp"/>
+
+            <!-- 🔹 Time Picker -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Time"
+                android:textStyle="bold"
+                android:paddingTop="12dp"/>
+            <EditText
+                android:id="@+id/customerTime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Pick a time"
+                android:inputType="time"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableStart="@drawable/clock"
+                android:drawablePadding="10dp"
+                android:background="@drawable/input"
+                android:padding="10dp"/>
+
+            <!-- 🔹 Book Now Button -->
+            <Button
+                android:id="@+id/btnBook"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Book Appointment"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/button"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

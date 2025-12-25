@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/bg_gradient"
+    tools:context=".Shop_Register">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/logo"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_glass"
+        android:padding="24dp"
+        android:elevation="6dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop Register"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <ScrollView
+            android:id="@+id/shoregscroll"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <!-- Existing Fields -->
+                <EditText
+                    android:id="@+id/regshopname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Shop Name"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:drawableStart="@drawable/shop"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/input"
+                    android:padding="12dp"
+                    android:layout_marginTop="12dp"/>
+
+                <EditText
+                    android:id="@+id/regshopownername"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Owner Name"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:drawableStart="@drawable/person"
+                    android:background="@drawable/input"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="12dp"
+                    android:padding="12dp"/>
+
+                <EditText
+                    android:id="@+id/regshopownernumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Mobile Number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:drawableStart="@drawable/call"
+                    android:background="@drawable/input"
+                    android:drawablePadding="10dp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:layout_marginTop="12dp"
+                    android:padding="12dp"/>
+
+                <EditText
+                    android:id="@+id/regshopowneremail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="E-mail"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:drawableStart="@drawable/email"
+                    android:background="@drawable/input"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginTop="12dp"
+                    android:padding="12dp"/>
+
+                <EditText
+                    android:id="@+id/regshopowneraddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_marginTop="12dp"
+                    android:gravity="top|start"
+                    android:drawableStart="@drawable/area"
+                    android:drawablePadding="8dp"
+                    android:padding="12dp"
+                    android:background="@drawable/input"/>
+
+                <EditText
+                    android:id="@+id/regshopownerpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Password"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:drawableStart="@drawable/lock"
+                    android:background="@drawable/input"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="12dp"
+                    android:padding="12dp"/>
+
+                <!-- New Fields to Match Backend -->
+                <EditText
+                    android:id="@+id/regshopownerstate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="State"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:drawableStart="@drawable/state"
+                    android:background="@drawable/input"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="12dp"
+                    android:padding="12dp"/>
+
+                <EditText
+                    android:id="@+id/regshopownercity"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="City"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:drawableStart="@drawable/city"
+                    android:background="@drawable/input"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="12dp"
+                    android:padding="12dp"/>
+
+                <EditText
+                    android:id="@+id/regshopownerarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Area"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:drawableStart="@drawable/area"
+                    android:background="@drawable/input"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="12dp"
+                    android:padding="12dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <!-- ID Proof -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/Regframidproof"
+                        android:layout_marginEnd="4dp">
+
+                        <ImageView
+                            android:id="@+id/imgIDProof"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/input"
+                            android:contentDescription="ID Proof"/>
+
+                        <TextView
+                            android:id="@+id/textidproof"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="ID Proof"
+                            android:drawableTop="@drawable/camera"
+                            android:paddingTop="40dp"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textStyle="bold"/>
+                    </FrameLayout>
+
+                    <!-- Shop Photo -->
+                    <FrameLayout
+                        android:id="@+id/Regframshopimg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp">
+
+                        <ImageView
+                            android:id="@+id/imgShopPhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/input"
+                            android:contentDescription="Shop Photo"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Shop Photo"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                           android:id="@+id/txtshopimg"
+                            android:drawableTop="@drawable/camera"
+                            android:paddingTop="40dp"
+                            android:textStyle="bold"/>
+                    </FrameLayout>
+
+                    <!-- Owner Photo -->
+                    <FrameLayout
+                        android:id="@+id/Regframownerimg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginStart="4dp">
+
+                        <ImageView
+                            android:id="@+id/imgOwnerPhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/input"
+                            android:contentDescription="Owner Photo"/>
+
+                        <TextView
+                            android:id="@+id/txtownerimg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Owner Photo"
+                            android:drawableTop="@drawable/camera"
+                            android:paddingTop="40dp"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textStyle="bold"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+
+                <!-- Register Button -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnShopReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Register"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button"
+                    android:layout_marginTop="20dp"/>
+
+                <!-- Login Link -->
+                <TextView
+                    android:id="@+id/shopownerlogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shop Login"
+                    android:paddingTop="8dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/blue"
+                    android:layout_gravity="end"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

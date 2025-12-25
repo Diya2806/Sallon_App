@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/titleServiceSubType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Sub Type"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:paddingBottom="12dp"/>
+
+    <!-- Service Type Spinner -->
+    <Spinner
+        android:id="@+id/spinnerServiceMain"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:theme="@style/SpinnerTheme"
+
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/input" />
+
+    <!-- Sub Service Name -->
+    <EditText
+        android:id="@+id/SubServiceName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter Sub Service Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="8dp"
+        android:background="@drawable/input"/>
+
+    <!-- Status Spinner -->
+    <Spinner
+        android:id="@+id/spinnerServiceSub"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:theme="@style/SpinnerTheme"
+        android:background="@drawable/input"
+        android:entries="@array/status_options" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSaveSubService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Sub Service"
+        android:background="@drawable/button"
+        android:layout_marginTop="16dp"/>
+
+
+
+</LinearLayout>

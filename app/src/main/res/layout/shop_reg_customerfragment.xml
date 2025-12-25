@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/RegCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:paddingBottom="12dp"/>
+
+
+        <EditText
+            android:id="@+id/searchRegCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Search Customer"
+            android:drawableStart="@drawable/search"
+            android:background="@drawable/input"
+            android:padding="8dp"/>
+
+        <ListView
+            android:id="@+id/listViewRegCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_glass"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

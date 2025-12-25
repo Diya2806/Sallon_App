@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card"
+    android:layout_marginBottom="8dp">
+
+    <!-- Shop Image -->
+    <ImageView
+        android:id="@+id/revShopImg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/person"
+        android:background="@drawable/bg_circle"
+        android:contentDescription="Shop Image" />
+
+    <!-- Text Details -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/revCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner Name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/revShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop Name"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/revService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today Revenue"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/revTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly Revenue"
+            android:textSize="13sp"
+            android:textColor="#666"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

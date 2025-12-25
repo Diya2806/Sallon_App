@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/RegCustomerDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer History"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:paddingBottom="12dp"/>
+    <ImageView
+        android:id="@+id/customerProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/person"
+        android:background="@drawable/bg_circle"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/customerName"
+        android:text="Customer Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/customerPhone"
+        android:text="1234567890"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/customerAddress"
+        android:text="Address"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Service History -->
+    <TextView
+        android:text="Service History"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_glass"
+    android:layout_height="wrap_content">
+
+    <ListView
+        android:id="@+id/serviceList"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp1">
+        <item
+            android:id="@+id/navdashbord"
+            android:icon="@drawable/home"
+            android:title="Dash Bord"/>
+        <item
+
+            android:id="@+id/navshopowner"
+            android:icon="@drawable/shop"
+            android:title="Shop Owner"/>
+        <item
+            android:icon="@drawable/customers"
+            android:id="@+id/navcustomer"
+            android:title="Customers"/>
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp2">
+        <item
+
+            android:id="@+id/navservicetype"
+            android:icon="@drawable/service"
+            android:title="Service Type"/>
+
+        <item
+
+            android:id="@+id/navservicesubtype"
+            android:icon="@drawable/service"
+            android:title="Service Sub Type"/>
+
+        <item
+            android:id="@+id/navBooking"
+            android:icon="@drawable/book"
+            android:title="Booking"/>
+
+    </group>
+
+<!--    <group android:checkableBehavior="single"-->
+<!--        android:id="@+id/grp3">-->
+<!--        <item-->
+
+<!--            android:id="@+id/navstate"-->
+<!--            android:icon="@drawable/state"-->
+<!--            android:title="State"/>-->
+<!--        <item-->
+
+<!--            android:id="@+id/navcity"-->
+<!--            android:icon="@drawable/city"-->
+<!--            android:title="City"/>-->
+
+<!--    </group>-->
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp4">
+        <item
+
+            android:id="@+id/navreports"
+            android:icon="@drawable/service"
+            android:title="Reports"/>
+        <item
+            android:id="@+id/profile"
+            android:title="Profile"
+            android:icon="@drawable/person"/>
+        <item android:id="@+id/navlogout"
+            android:title="LogOut"
+            android:icon="@drawable/logout"
+            />
+
+    </group>
+</menu>
